@@ -1,0 +1,261 @@
+<html>
+    <head>
+
+        <title>Contact Us</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+
+            }
+            body
+            {
+                background-image: linear-gradient(rgb(250, 12, 182),rgb(239, 96, 184),rgb(172, 161, 167),rgb(28, 14, 20));
+                /* opacity: 0.5; */
+                font-size: 14px;
+            }
+            .container
+            {
+                margin: 50px auto;
+                width: 80%;
+                border-radius: 20px;
+
+            }
+            .contact-box
+            {
+                /* background: rgb(204, 181, 232); */
+                display: flex;
+                margin-bottom: 40px;
+                /* border-radius: 50px; */
+            }
+            .request
+            {
+                
+                background:rgb(181, 179, 179,0);
+                flex-basis:45%;
+                padding: 40px 60px;
+                border-radius: 500px;
+                /* opacity: 0.2; */
+
+            }
+            .reach
+            {
+               
+                flex-basis:45%;
+                padding: 40px ;
+                background:rgb(163, 163, 244,0);
+            }
+            .input-row
+            {
+                display: flex;
+                /* display:inline-flexbox; */
+                color:rgb(160, 160, 246);
+                justify-content: space-evenly;
+                margin-bottom: 20px;
+            }
+            .input-row .input-group
+            {
+                flex-basis:47%;
+                /* margin-bottom: 0px; */
+                /* padding-bottom: 0px; */
+
+            }
+            input
+            {
+                width: 100%;
+                text-align:none;
+                border-radius: 15px;
+                border: none;
+                border-bottom:3px solid rgb(124, 102, 235);
+                /* outline:none; */
+                padding:10px;
+                color: rgb(13, 11, 22);
+                background-color: rgb(248, 223, 223);
+                /* background-image: rgb(185, 185, 236); */
+            }
+            textarea
+            {
+                width: 100%;
+                border-radius: 10px;
+                /* color: rgb(90, 63, 225); */
+                border: none;
+                border-bottom:3px solid rgb(124, 102, 235);
+                outline: 0;
+                padding: 10px;
+            }
+            .submit
+            {
+                width: 100px;
+                /* text-align:center; */
+                padding: 5px;
+                color: white;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                background:rgb(12, 12, 23);
+
+            }
+            h2{
+                padding: 20px;
+                text-decoration:underline;
+                /* align-items: center; */
+                text-align: center;
+            }
+            label
+            {
+                /* padding:0; */
+                /* margin: 5px; */
+                color: rgb(22, 16, 16);
+                font-weight: bold;
+                font-size: 16px;
+            }
+            /* .contact-box h3 
+            {
+                color:rgb(90, 90, 219);
+                font-weight: 600;
+                margin-bottom:30px;
+
+
+            } */
+
+            tr td:first-child
+            {
+                padding-bottom:20px;
+                font-size: 20px;
+                color: rgb(247, 240, 240);
+                
+
+            } 
+             
+            tr td
+            {
+                padding-bottom: 20px;
+                padding-left: 20px;
+                color: rgb(30, 28, 28);
+                font-size: 20px;
+            }
+            h1
+            {
+                margin: 10px;
+                font-family: 'Times New Roman';
+                text-decoration: underline;
+                text-transform: capitalize;
+            }
+            h3
+            {
+               font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            table
+            {
+                padding-left:180px;
+
+            }
+            
+
+
+         </style>
+    </head>
+
+    <body>
+        <div class="container">
+ <form onsubmit="function sendEmail(); reset(); return false;">
+
+            <h1>Connect with us:<br> </h1>
+            <form action="https://formsubmit.co/https://formsubmit.co/el/xukuwa" method="POST">
+            <h3>We wolud love to respond to your quries and help you succeed. Feel free to got in touch with us.</h3>
+        </div>
+        
+        <div class="contact-box">
+            <div class="request">
+              <h2>Send Your Request</h2>
+              <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Name:</label>
+                        <input type="text" placeholder="write name here">
+
+
+                    </div>
+                    <div class="input-group">
+                        <label>Email:</label>
+                        <input type="text" placeholder="test@gmail.com">
+                        
+
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Phone Number:</label>
+                        <input type="number" placeholder="***** *****">
+
+
+                    </div>
+                    <div class="input-group">
+                        <label>Subject:</label>
+                        <input type="text" placeholder="subject">
+                        
+
+                    </div>
+                </div>
+                <label >
+                    Message:
+                </label> 
+                <textarea rows="10" style="background-color:rgb(248, 223, 223)" placeholder="Here type your Message"></textarea><br><br>
+
+                <center><button class="submit">Submit Now</button></center>
+                
+
+              </form>
+            </div>
+            <div class="reach">
+
+              <h2>Reach Us</h2>
+
+              <table>
+                <tr>
+                    <td><b>Email:</b></td>
+                    <td>rayinaveensriram@gmail.com</td>
+
+                </tr>
+                <tr>
+                    <td><b>Phone:</b></td>
+                    <td>+91 9505105851</td>
+                    
+                </tr>
+                <tr>
+                    <td><b>Address:</b></td>
+                    <br>
+                    <td style="line-height:20pt">#f-108,vasantha industries,Thimmapuram village,<br> Edlapadu mandal,palnadu district,<br> Pin code:522233</td>
+                    
+                </tr>
+              </table>
+
+
+             </div>
+        </div>
+    </form>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+    Host : "smtp.gmail.com.com",
+    Username : "rayinaveensriram@gmail.com",
+    Password : "password",
+    To : 'rayinaveensriram@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contct Form Enquiry",
+    Body : "Name: "+ document.getElementById("name").value
+            + "<br> Email: " + document.getElementById(Email).value
+            +"<br> Phone numaber: " +document.getElementById(number).value, 
+}).then(
+  message => alert(message)
+);
+
+            }
+        </script>
+
+    </body>
+
+</html>
