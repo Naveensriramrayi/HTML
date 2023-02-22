@@ -1,0 +1,223 @@
+<html>
+    <head>
+
+        <title>Contact Us</title>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+
+            }
+            body
+            {
+                background: rgb(238, 158, 210);
+                font-size: 14px;
+            }
+            .container
+            {
+                margin: 50px auto;
+                width: 80%;
+
+            }
+            .contact-box
+            {
+                background: rgb(204, 181, 232);
+                display: flex;
+            }
+            .request
+            {
+                
+                background:rgb(219, 219, 234);
+                flex-basis:45%;
+                padding: 40px 60px;
+
+            }
+            .reach
+            {
+               
+                flex-basis:45%;
+                padding: 40px ;
+                background:rgb(182, 182, 249);
+            }
+            .input-row
+            {
+                display: flex;
+                color:rgb(182, 182, 249);
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+            .input-row .input-group
+            {
+                flex-basis:47%;
+
+            }
+            input
+            {
+                width: 100%;
+                border: none;
+                border-bottom: 1px solid rgb(90, 63, 225);
+                outline:none;
+                padding-bottom:5px;
+                color: rgb(90, 63, 225);
+            }
+            textarea
+            {
+                width: 100%;
+                /* color: rgb(90, 63, 225); */
+                border:1px solid rgb(90, 63, 225);
+                outline: 0;
+                padding: 10px;
+            }
+            .submit
+            {
+                width: 100px;
+                /* text-align:center; */
+                padding: 5px;
+                color: white;
+                border: none;
+                outline: none;
+                border-radius: 40px;
+                background:rgb(90, 90, 219);
+
+            }
+            h2{
+                padding: 20px;
+                text-decoration:underline;
+                /* align-items: center; */
+                text-align: center;
+            }
+            label
+            {
+                padding:0;
+                color: rgb(90, 63, 225);
+            }
+            /* .contact-box h3 
+            {
+                color:rgb(90, 90, 219);
+                font-weight: 600;
+                margin-bottom:30px;
+
+
+            } */
+
+            tr td:first-child{
+                padding-right:20px;
+                color: white;
+
+            } 
+             
+            tr td
+            {
+                padding-top: 20px;
+                color: white;
+            }
+            h1
+            {
+                padding: 30px;
+            }
+
+
+         </style>
+    </head>
+
+    <body>
+        <div class="container">
+ <form onsubmit="function sendEmail(); reset(); return false;">
+
+            <h1>Connect with us<br> </h1>
+            <form action="https://formsubmit.co/https://formsubmit.co/el/xukuwa" method="POST">
+            <p>We wolud love to respond to your quries and help you succeed. <br> Feel free to got in touch with us.</p>
+        </div>
+        
+        <div class="contact-box">
+            <div class="request">
+              <h2>Send Your Request</h2>
+              <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Name:</label>
+                        <input type="text" placeholder="naveen sriram">
+
+
+                    </div>
+                    <div class="input-group">
+                        <label>Email:</label>
+                        <input type="text" placeholder="naveensriram@gmail.com">
+                        
+
+                    </div>
+                </div>
+
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Phone Number:</label>
+                        <input type="number" placeholder="76749 70851">
+
+
+                    </div>
+                    <div class="input-group">
+                        <label>Subject:</label>
+                        <input type="text" placeholder="subject">
+                        
+
+                    </div>
+                </div>
+                <label>
+                    Message
+                </label> 
+                <textarea rows="4"placeholder="Here type your Message"></textarea><br><br>
+
+                <center><button class="submit">Submit Now</button></center>
+                
+
+              </form>
+            </div>
+            <div class="reach">
+
+              <h2>Reach Us</h2>
+
+              <table>
+                <tr>
+                    <td><b>Email:</b></td>
+                    <td>rayinaveensriram@gmail.com</td>
+
+                </tr>
+                <tr>
+                    <td><b>Phone:</b></td>
+                    <td>+91 9505105851</td>
+                    
+                </tr>
+                <tr>
+                    <td><b>Address:</b></td>
+                    <td style="line-height:20pt">#f-108,vasantha industries,Thimmapuram village,<br> Edlapadu mandal,palnadu district,<br> Pin code:522233</td>
+                    
+                </tr>
+              </table>
+
+
+             </div>
+        </div>
+    </form>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+    Host : "smtp.gmail.com.com",
+    Username : "rayinaveensriram@gmail.com",
+    Password : "password",
+    To : 'rayinaveensriram@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "New Contct Form Enquiry",
+    Body : "Name: "+ document.getElementById("name").value
+            + "<br> Email: " + document.getElementById(Email).value
+            +"<br> Phone numaber: " +document.getElementById(number).value, 
+}).then(
+  message => alert(message)
+);
+
+            }
+        </script>
+
+    </body>
+
+</html>
